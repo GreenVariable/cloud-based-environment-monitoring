@@ -6,8 +6,9 @@ This project integrates two NodeMCU 8266 boards to create a system for real-time
  
 Working Principle: 
 The project consists of two main parts: sensing and display. 
-In the sensing part, a NodeMCU board is used to gather temperature and light data from respective sensors. The NodeMCU utilizes its Wi-Fi capabilities to establish a connection with Firebase Realtime Database. Through this connection, the data is uploaded to the cloud in real-time, ensuring continuous monitoring of environmental conditions. 
-In the display part, another NodeMCU board receives the data from Firebase Realtime Database. A TFT ILI9341 display is connected to the board where the transmitted temperature and light data are visualized for user observation. 
+In the sensing part, a NodeMCU board is used to gather temperature, humidity, and light data from respective sensors. The NodeMCU utilizes its Wi-Fi capabilities to establish a connection with the Firebase Realtime Database. Through this connection, the data is uploaded to the cloud in real time, ensuring continuous monitoring of environmental conditions. A red LED is used to visualize network status. 
+In the display part, another NodeMCU board receives the data from the Firebase Realtime Database. A TFT ILI9341 display is connected to the board where the transmitted temperature and light data are visualized for user observation.
+ 
  
 Key Features: 
 1. Real-time monitoring of temperature and light levels. 
